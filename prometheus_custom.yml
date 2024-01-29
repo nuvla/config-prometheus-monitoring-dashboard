@@ -31,6 +31,6 @@ scrape_configs:
   - job_name: 'prometheus'
     dns_sd_configs:
       - names:
-          - 'localhost'
+          - 'prometheus'
         type: 'A'
         port: 9100        
