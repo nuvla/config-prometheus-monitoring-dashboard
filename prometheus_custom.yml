@@ -8,22 +8,22 @@ global:
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['10.0.135.237:9090']
+      - targets: ['127.0.0.1:9090']
 
   - job_name: 'DemoEliteDesk'
     static_configs:
-      - targets: ['192.168.40.93:9100']     
+      - targets: ['192.168.40.93:9100']      
 
   - job_name: 'dockerd-exporter'
     dns_sd_configs:
       - names:
-          - 'tasks.dockerd-exporter'
+          - 'dockerd-exporter'
         type: 'A'
         port: 9323
 
   - job_name: 'node-exporter'
     dns_sd_configs:
       - names:
-          - 'tasks.node-exporter'
+          - 'node-exporter'
         type: 'A'
         port: 9100
