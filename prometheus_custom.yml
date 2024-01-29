@@ -33,4 +33,4 @@ scrape_configs:
       - names:
           - 'prometheus'
         type: 'A'
-        port: 9100        
+        port: 9090        
