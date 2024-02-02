@@ -26,7 +26,7 @@ scrape_configs:
         job: 'One2560'
     metrics_path: /snmp
     params:
-      module: [if_mib]
+      module: [if_mib, tcp_mib]
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
