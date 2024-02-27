@@ -17,9 +17,10 @@ scrape_configs:
 #        type: 'A'
 #        port: 9323
 
-  - job_name: 'node-exporter'
+
+  - job_name: 'local node-exporter'
     dns_sd_configs:
       - names:
-          - 'tasks.node-exporter'
+          - 'node-exporter'
         type: 'A'
-        port: 9100
+        port: 9100        
